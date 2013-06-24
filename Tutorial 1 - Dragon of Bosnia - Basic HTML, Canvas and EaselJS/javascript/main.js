@@ -4,17 +4,17 @@ function init() {
 	stage = new createjs.Stage(canvas);
 
 	//adding the background image
-	var backgroundImage = new createjs.Bitmap("images/background.jpg");
-	stage.addChild(backgroundImage);
+	var background = new createjs.Bitmap("images/background.jpg");
+	stage.addChild(background);
 
 	//adding the trees image
-	var treesImage = new createjs.Bitmap("images/trees.png");
-	stage.addChild(treesImage);
+	var trees = new createjs.Bitmap("images/trees.png");
+	stage.addChild(trees);
 
 	//adding the ground image and positioning it
-	var groundImage = new createjs.Bitmap("images/ground.png");
-	stage.addChild(groundImage);
-	groundImage.y = 164;
+	var ground = new createjs.Bitmap("images/ground.png");
+	stage.addChild(ground);
+	ground.y = 164;
 
 	//updating the stage
 	stage.update();
