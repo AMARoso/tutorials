@@ -114,7 +114,7 @@ function handleClick() {
 	//on click we call our start(); function
 	start();
 	//we remove the progres label and loading bar and also remove the click event listener
-	stage.removeChild(loadProgressLabel);
+	stage.removeChild(loadProgressLabel, bar);
 	canvas.removeEventListener("click", handleClick);
 }
 
